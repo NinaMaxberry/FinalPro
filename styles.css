@@ -1,0 +1,65 @@
+/* Add background, color, style to nav bar */
+.topnav {
+    background-color: slategrey;
+    color: #FAEBD7;
+    list-style: none;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+/* Links inside nav bar */
+.topnav > li {
+    display: inline-block;
+    padding-right: 50px;
+}
+
+/* take away line under list items */
+.topnav li a {
+    text-decoration: none;
+    color: #FAEBD7;
+}
+
+/* hover selected link */
+.topnav a:hover {
+    color: black;
+}
+
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.tag1,
+.tag2,
+.tag3,
+.tag4, {
+    display: inline-block;
+    font-size: 15px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 465px) {
+.logo {
+        max-width: 50%;
+        align-self: center;
+
+    }
+}  
+
