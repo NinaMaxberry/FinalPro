@@ -4,17 +4,19 @@
       <meta charset="utf-8">
       <title>Love The Children</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="normalize.css">
-      <link rel="stylesheet" href="Forms.css">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="css/programs.css">
+      <link rel="stylesheet" href="css/forms.css">
+      <link rel="stylesheet" href="css/contact.css">
       
     </head>
     <ul class="topnav"> <!-- Nav Bar Titles -->
 
         <li><a href="index.html">Home</a>
         <li><a href="programs.html">Program</a>
-        <li><a href="Forms.html">Volunteer/Donate</a>
-        <li><a href="#">Contact Us</a>
+        <li><a href="forms.html">Volunteer/Donate</a>
+        <li><a href="contact.html">Contact Us</a>
       
       </li>
       </ul>
@@ -24,42 +26,44 @@
     
     <body>
       <div>
-        <img class = "logo-center" src="C:\Users\nmaxb\Documents\Coding\logo.jpg" alt="logo">
+        <img class = "logo-center" src="img/logo.jpg" alt="logo">
       </div>
 
-    <form action="index.html" method="post"> 
-      <h1>Volunteer With Us</h1>
+    <form action="forms.html" method="post"> 
+      <h1>VOLUNTEER WITH US</h1>
       
-      <fieldset>
+      <fieldset class="information">
          
-         
-      <legend>Contact Information</legend>
+         <legend>Contact Information</legend>
+      
+      <div>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="user_fname">
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="user_lname">
+      </div>
 
-        <label for="name">First Name:</label>
-        <input type="text" id="name" name="user_fname">
-
-        <label for="name">Last Name:</label>
-        <input type="text" id="name" name="user_lname">
-        
+      <div>
         <label for="address">Address:</label>
         <input type="text" id="address" name="address">
-
         <label for="city">City:</label>
         <input type="text" id="city" name="city">
+      </div>
 
+      <div>
         <label for="state">State:</label>
         <input type="text" id="state" name="state">
-
         <label for="zip">Zip Code:</label>
         <input type="#" id="zip" name="zip_code">
+      </div>
 
+      <div>
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" name="phone_num">
-
         <label for="email">Email:</label>
         <input type="email" id="email" name="emailaddress">
-        
-                
+      </div>
+      
        </fieldset>
       <br>
       <fieldset>
@@ -72,35 +76,10 @@
           <input type="checkbox" name="staff" value="As Needed">As Needed
         </div> 
 
-       <!----- <label for="job">Job Role:</label>
-        <select id="job" name="user_job">
-          <optgroup label="Web">
-            <option value="frontend_developer">Front-End Developer</option>
-            <option value="PHP_developer">PHP Developer</option>
-             <option value="Python_developer">Python Developer</option>
-              <option value="Rails_developer">Rails Developer</option>
-              <option value="Web_designer">Web Designer</option>
-              <option value="Wordpress_developer">Word Press Developer</option>
-           </optgroup>
-         <optgroup label="Mobile">
-           
-            <option value="android_developer">Android Developer</option>
-            <option value="ios_developer">IOS Developer</option>
-            <option value="mobile_developer">Mobile Developer</option>
-           </optgroup>
-          
-           <optgroup label="Business">
-            <option value="business_owner">Business Owner</option>
-            <option value="freelancer">Freelancer</option>
-           </optgroup>
-          </select>--->
-      
+            
         </fieldset>
-
-      <button class="buttontop" type="submit">Sign Up</button>
-      <button class="buttontop" type="reset">Reset</button>
-      
-      <h1>Donations</h1>
+    
+      <h1>DONATIONS</h1>
 
         <fieldset>
       <p>Your donations will help source office supplies, administrative costs, and field trips.  Yes, I would love to help.  Please accept my donation listed below.</p>
@@ -109,14 +88,20 @@
       <input type="checkbox" name="donate" value="$50">$50<br>
       <input type="checkbox" name="donate" value="$100">$100<br>
       <input type="checkbox" name="donate" value="Other">Other
-    </div> 
-
-    <div>
-
-    </div>
+    
     </fieldset>
 
+    <button onclick="myThanks()">Submit</button>     
+  
+    <div>
+
     </form>
-        
+    <footer class="bottom">
+
+       <div>
+         Copyright 2019  Nina R. Maxberry</div>
+     
+       <script src="script.js"></script>
+     </footer>   
     </body>
 </html>

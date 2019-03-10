@@ -3,4 +3,3 @@ function myThanks() {
     alert("Thank you " + you + " for your interest. We will contact you soon.");
 
 }
-

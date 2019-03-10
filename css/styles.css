@@ -2,41 +2,29 @@
     box-sizing: border-box;
 }
 
+/*Controls the body of the site */
 body {
     background-color: #FAEBD7;
-    min-height: 600px;
+    min-height: 700px;
     margin-bottom: 150px;
     padding: 0;
-    clear: both;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*clear: both;*/
+    font-family: 'Verdana';
 }
 
-.bottom {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: slategrey;
-    color: #FAEBD7;
-    text-decoration: none;
-    height: 45px;
-    padding: 13px 0;
-}
 /* Add background, color, style to nav bar */
 .topnav {
     background-color: slategrey;
     color: #FAEBD7;
     list-style: none;
     text-align: center;
-    padding: 20px 10px;
+    padding: 0px 20px 10px;
 }
 
 /* Links inside nav bar */
 .topnav > li {
-    display: inline;
-    padding-right: 50px;
-    padding-left: 20px;
+    display: inline-block;
+    padding-right: 15px;
 }
 
 /* take away line under list items */
@@ -50,12 +38,14 @@ body {
     color: black;
 }
 
+
 /* to center logo and image */
 .logo-center {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: 35%;
+    /*max-width: 45%;
+    max-height: 45%;*/
 }
 
 p1,
@@ -70,51 +60,68 @@ h3 {
     padding-left: 18px;
 }
 
+/* Flex container for program page */
 .flex-container {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    border: 5px solid magenta;
-
+    border: 2px solid magenta;
 }
 
+/*Flex item in program flex container*/
 .iteminbox {
-    display: block;
-    float: left;
+    display: flex;
     flex-direction: column;
     width: 50%;
     padding: 0 15px;
     flex-basis: 100%;
     flex: 1;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     height: auto;
 }
 
-
-/*.flex-ctrbottom {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    align-self: center;
-}*/
-
-/*p4 {s
+    width: 100%;
     text-align: center;
-}*/
-
-
-/* Media Queries */
-
-/*@media (min-width: 769px) {
-    .flex-container {
-        width: 90%;
-        margin: 0 auto;
-    }
+    background: slategrey;
+    color: #FAEBD7;
+    text-decoration: none;
+    height: 45px;
+    padding: 13px 0;
 }
-@media (min-width: 1025px) {
-    .flex-container {
-        width: 80%;
-        max-width: 1025px;
+
+
+
+/*  Media Queries */
+
+
+@media screen and (max-width: 600px) {
+.topnav > li {
+    font-size: 15px;
     }
+
+.flex-container {
+    width: auto;
+}
+
+.logo-center {
+    width: 170px;
+    height: 150px;
+}
+
+/*form {
+    width: 75%;
+}
+
+fieldset {
+    width: 75%;
 }*/
+}
+
+
+
+
+

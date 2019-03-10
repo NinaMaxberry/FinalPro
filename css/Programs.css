@@ -1,68 +1,21 @@
-/* Add background, color, style to nav bar */
-.topnav {
-    background-color: slategrey;
-    color: #FAEBD7;
-    list-style: none;
-    text-align: center;
-    padding: 20px 10px;
-}
-
-/* Links inside nav bar */
-.topnav > li {
-    display: inline;
-    padding-right: 50px;
-    padding-left: 20px;
-}
-
-/* take away line under list items */
-.topnav li a {
-    text-decoration: none;
-    color: #FAEBD7;
-}
-
-/* hover selected link */
-.topnav a:hover {
-    color: black;
-}
-
-/* to center logo and image 
-.logo-center {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 35%;
-}*/
-
-
 /* Button */
 .toplabel {
     display: inline-block;
+    text-align: center;
+    font-size: 15px;
     background-color: blue;
     color: white;
     padding: 10px;
-    font-size: 20px;
     border-style: solid;
     min-width: 150px;
     margin: 0;
+    align-self: center;
 }
-
-/*.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}*/
 
 ul {
     padding: 0;
 }
+
 li {
     display: block;
     list-style: none;
@@ -70,26 +23,11 @@ li {
     margin-top: 15px;
 }
 
-/* Media Queries */
-
-/*@media (min-width: 518px) {
-
-.flex-container {
-    display: flex;
+title {
+    position: absolute;
+    display: block;
+    border: 3px solid red;
+    width: 100px;
+    height: 300px;
 }
 
-.iteminbox {
-    flex-wrap: wrap;
-}
-
-.img {
-    display: none;
-}
-}
-
-@media (min-width: 1025px) {
-
-.iteminbox {
-    flex-basis: 0;
-}
-}*/
