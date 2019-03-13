@@ -14,17 +14,21 @@ body {
 
 /* Add background, color, style to nav bar */
 .topnav {
+    display: flex;
+    flex-direction: row;
     background-color: slategrey;
     color: #FAEBD7;
     list-style: none;
-    text-align: center;
-    padding: 0px 20px 10px;
+    padding: 0px 15px 10px;
+    justify-content: center;
+    height: 50px;
 }
 
 /* Links inside nav bar */
 .topnav > li {
+    flex: 1;
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 12px;
 }
 
 /* take away line under list items */
@@ -44,8 +48,8 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    /*max-width: 45%;
-    max-height: 45%;*/
+    max-width: 45%;
+    max-height: 45%;
 }
 
 p1,
@@ -65,7 +69,6 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    border: 2px solid magenta;
 }
 
 /*Flex item in program flex container*/
@@ -78,6 +81,10 @@ h3 {
     flex: 1;
     justify-content: flex-start;
     height: auto;
+}
+
+#butt {
+    align-self: ;
 }
 
 footer {
@@ -97,29 +104,58 @@ footer {
 
 /*  Media Queries */
 
-
-@media screen and (max-width: 600px) {
-.topnav > li {
-    font-size: 15px;
-    }
-
-.flex-container {
-    width: auto;
+@media screen and (max-width: 500px) {
+    
+.topnav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
 }
 
-.logo-center {
-    width: 170px;
-    height: 150px;
+.topnav li {
+    flex-basis: 50%;
+}
 }
 
-/*form {
-    width: 75%;
+@media (min-width: 624px) {
+
+.information {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+      }
+
+      .information > div {
+        width: auto;
 }
 
-fieldset {
-    width: 75%;
+label {
+    display: block;
+}
+
+.col-1 {
+    float: left;
+}
+.col-2 {
+    float: right;
+}
+
+}
+/*.information {
+    display: block;
+}
+}
+
+/*@media (min-width: 584px) {
+
+.information {
+   width: auto;
+   margin: 0 auto; 
+}
 }*/
-}
+
+
+
 
 
 

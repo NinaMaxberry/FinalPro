@@ -30,12 +30,13 @@
       </div>
 
     <form action="forms.html" method="post"> 
-      <h1>VOLUNTEER WITH US</h1>
+      <h1 style="text-align: center">VOLUNTEER WITH US</h1>
       
       <fieldset class="information">
          
          <legend>Contact Information</legend>
       
+        <div class="col-1"></div>
       <div>
         <label for="fname">First Name:</label>
         <input type="text" id="fname" name="user_fname">
@@ -50,6 +51,7 @@
         <input type="text" id="city" name="city">
       </div>
 
+        <div class="col-2">
       <div>
         <label for="state">State:</label>
         <input type="text" id="state" name="state">
@@ -63,14 +65,15 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="emailaddress">
       </div>
-      
+    </div>
+    
        </fieldset>
       <br>
       <fieldset>
           
         <legend>Areas of Interest</legend>
         <div class="help">
-          <input type="checkbox" name="staff" value="BOD">Board of Director<br>
+          <input type="checkbox" name="staff" value="BOD">Board of Directors<br>
           <input type="checkbox" name="staff" value="Administrative">Administrative<br>
           <input type="checkbox" name="staff" value="Facilitator">Facilitator<br>
           <input type="checkbox" name="staff" value="As Needed">As Needed
@@ -79,9 +82,10 @@
             
         </fieldset>
     
-      <h1>DONATIONS</h1>
+      <br>
 
         <fieldset>
+        <legend>Donations</legend>
       <p>Your donations will help source office supplies, administrative costs, and field trips.  Yes, I would love to help.  Please accept my donation listed below.</p>
      <div class="help">
       <input type="checkbox" name="donate" value="$25">$25<br>
@@ -89,9 +93,13 @@
       <input type="checkbox" name="donate" value="$100">$100<br>
       <input type="checkbox" name="donate" value="Other">Other
     
+      
+
     </fieldset>
 
-    <button onclick="myThanks()">Submit</button>     
+    <div id="#butt">
+    <button onclick="myThanks()">Submit</button>
+    </div>    
   
     <div>
 
