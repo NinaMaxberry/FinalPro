@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Love The Children</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/programs.css">
@@ -21,35 +23,56 @@
 </ul>
 
 <header>
- 
 </header>
 
 <body>
 
-  <div>
-    <img class = "logo-center" src="img/logo.jpg" alt="logo">
-  </div>
+    <div class="twoContainers">
+
+    <div class="imageContainer">
+      <div class="row">
+        <div class="column">
+          <img class = "logo-center" src="img/logo.jpg" alt="logo" style: width: 100px; height: 100px;>
+        </div>
+      </div>
+    </div>
   
-<h3>OUR PROGRAM</h3>
-<hr size=20>
+    <div class="tagplace" > <!--container for tagline-->
+      <div class="row">
+        <div class="tagline"> <!---tagline-->
+          "Children see magic because they look for it."<br><em>-Christopher Moore</em>
+        </div>
+      </div>
+    </div>
+  
+  </div>  <!---Two Container Div -->
 
-<div class="flex-container">
+<h3 class="location">OUR PROGRAM</h3>
+<hr>
 
-  <div class="iteminbox"><!-----Flex Item-->
-    <p2>The Children's Rainbow Project program was created to fill the social skills gaps often not covered in the homes of our youth, their neighborhoods or their classroom.  The program is faciliated in a hands-on "work environment".  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p2>
-  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm"><!-----Flex Item-->
+    The Children's Rainbow Project program was created to fill the social skills gaps often not covered in the homes of our youth, their neighborhoods or their classroom.  The program is faciliated in a hands-on "work environment".  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
 
-  <div class="iteminbox">
+  <div class="keepTogether">
+  <div class="col-sm">
     <p class="toplabel">Hover over a program module below for more information</p>
 
-  <ul>
+    <ul>
+    <!-----Hover Items-->
       <li><a href=" " title="Shaking hands with eye contact">Social Skills</a></li>
       <li><a href=" " title="Managing a checking account">Finances</a></li>
       <li><a href=" " title="Defining bullying">Bullying</a></li>
-      <li><a href=" " title="Career Planning">Careers</a></li>
-  </ul>
-  
-</div>
+      <li><a href=" " title="What I want to be">Careers</a></li>
+    </ul>
+
+    </div>
+  </div> <!---keepTogether-->
+  </div>  <!--row-->
+
+</div> <!---container-->
 
 
 
@@ -59,8 +82,13 @@
   
    <div>Copyright 2019  Nina R. Maxberry</div>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
-</footer>
-</body>
+
+    </footer>
+
+  </body>
 
 </html>
